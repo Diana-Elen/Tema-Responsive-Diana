@@ -120,7 +120,20 @@ img {
     width:auto;
 }
 
-@media screen {
+@media (max-width:700px) {
+
+    .wrapper {
+        --margin:1rem;
+    
+        background: radial-gradient(rgba(116, 223, 199, 0.3), rgb(255,255,255));
+        border-radius: 0.4rem;
+        box-shadow: 0.7rem 0.5rem 1rem 0.2rem rgba(170,200,200, 0.5);
+        width: 55ch;
+        margin: var(--margin) auto;
+        min-height: calc(100vh - 2 * var(--margin));
+        margin-inline:auto;
+    }
+
     header {
         display: flex;
         flex-direction: column;
@@ -144,7 +157,7 @@ img {
         border-radius: 1rem;
     }
     img {
-        width: 28rem;
+        width: 25rem;
         border:0;
         order:-3;
     }
@@ -171,4 +184,3 @@ img {
         font-size: 1.6rem;
     }
     
-}
