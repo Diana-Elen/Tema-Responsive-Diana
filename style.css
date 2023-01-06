@@ -119,3 +119,10 @@ img {
     height:15rem;
     width:auto;
 }
+
+@media screen {
+    header {
+        display: flex;
+        flex-direction: column;
+    }
+}
